@@ -22,7 +22,17 @@ import { getTitlesSortedByPrice } from "./questions/q28.js";
 import { mostExpensiveProduct } from "./questions/q29.js";
 import { toUpperCaseArray } from "./questions/q3.js";
 import { mostChipestProduct } from "./questions/q30.js";
+import { totalPrice } from "./questions/q31.js";
+import { countProductsByCategory } from "./questions/q32.js";
+import { productsInPriceRange } from "./questions/q33.js";
+import { squareNumbers } from "./questions/q34.js";
+import { pricesToCurrency } from "./questions/q35.js";
+import { sortAscending } from "./questions/q36.js";
+import { sortDescending } from "./questions/q37.js";
+import { removeFalsy } from "./questions/q38.js";
+import { allEven } from "./questions/q39.js";
 import { arrayToText } from "./questions/q4.js";
+import { hasNumberAbove100 } from "./questions/q40.js";
 import { reverseArray } from "./questions/q5.js";
 import { sumArray } from "./questions/q6.js";
 import { largestNumber } from "./questions/q7.js";
@@ -154,3 +164,33 @@ console.log(mostExpensiveProduct(products));
 
 //Q30
 console.log(mostChipestProduct(products));
+
+//Q31
+console.log(totalPrice(products));
+
+//Q32
+console.log(countProductsByCategory(products));
+
+//Q33
+console.log(productsInPriceRange(products, 100, 1000));
+
+//Q34
+console.log(squareNumbers([2, 3, 4]));
+
+//Q35
+console.log(pricesToCurrency([100, 200]));
+
+//Q36
+console.log(sortAscending([3, 1, 6, 2]));
+
+//Q37
+console.log(sortDescending([1, 2, 3, 4]));
+
+//Q38
+console.log(removeFalsy([0, 1, false, 2, "", 3, undefined, null]));
+
+//Q39
+console.log(allEven([2, 4, 6, 8]));
+
+//Q40
+console.log(hasNumberAbove100([2, 4, 6, 8, 101]));
