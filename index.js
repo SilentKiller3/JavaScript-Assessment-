@@ -10,7 +10,18 @@ import { replaceWord } from "./questions/q17.js";
 import { findLongStrings } from "./questions/q18.js";
 import { lengthOfStrings } from "./questions/q19.js";
 import { mergeArray } from "./questions/q2.js";
+import { removeDuplicatess } from "./questions/q20.js";
+import { countTotalCharacters } from "./questions/q21.js";
+import { getProductTitles } from "./questions/q22.js";
+import { getUniqueCategories } from "./questions/q23.js";
+import { pricesDoubled } from "./questions/q24.js";
+import { productsGreaterThan } from "./questions/q25.js";
+import { getTitles } from "./questions/q26.js";
+import { getPricesWithDiscountType } from "./questions/q27.js";
+import { getTitlesSortedByPrice } from "./questions/q28.js";
+import { mostExpensiveProduct } from "./questions/q29.js";
 import { toUpperCaseArray } from "./questions/q3.js";
+import { mostChipestProduct } from "./questions/q30.js";
 import { arrayToText } from "./questions/q4.js";
 import { reverseArray } from "./questions/q5.js";
 import { sumArray } from "./questions/q6.js";
@@ -78,3 +89,68 @@ console.log(findLongStrings(["apple", "bat", "cat", "banana"]));
 
 //Q19
 console.log(lengthOfStrings(["a", "bb", "ccc"]));
+
+//Q20
+console.log(removeDuplicatess([1, 2, 1, ["a", "b"], ["a", "b"]]));
+
+//Q21
+console.log(countTotalCharacters(["Hi", "Iraj"]));
+
+// List of Products
+let products = [
+  {
+    id: 1,
+    title: "Pen",
+    category: "stationery",
+    price: 10,
+    discount: { type: "none" },
+  },
+  {
+    id: 2,
+    title: "Shirt",
+    category: "clothing",
+    price: 500,
+    discount: { type: "seasonal" },
+  },
+  {
+    id: 3,
+    title: "Phone",
+    category: "electronics",
+    price: 20000,
+    discount: { type: "festival" },
+  },
+  {
+    id: 4,
+    title: "Notebook",
+    category: "stationery",
+    price: 50,
+    discount: { type: "none" },
+  },
+];
+
+//Q22
+console.log(getProductTitles(products));
+
+//Q23
+console.log(getUniqueCategories(products));
+
+//Q24
+console.log(pricesDoubled(products));
+
+//Q25
+console.log(productsGreaterThan(products));
+
+//Q26
+console.log(getTitles(products, "stationery"));
+
+//Q27
+console.log(getPricesWithDiscountType(products, "seasonal"));
+
+//Q28
+console.log(getTitlesSortedByPrice(products));
+
+//Q29
+console.log(mostExpensiveProduct(products));
+
+//Q30
+console.log(mostChipestProduct(products));
